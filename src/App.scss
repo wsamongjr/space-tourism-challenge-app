@@ -1,0 +1,30 @@
+@import "./variables.scss";
+body {
+    font-size: $desktop-body;
+    background: url("./assets/home/background-home-desktop.jpg") no-repeat;
+}
+
+.layout {
+    display: grid;
+
+    height: 100%;
+
+    .nav-top-list {
+        display: flex;
+        gap: $spacing-3xl;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            display: inline;
+            a {
+                color: $color-white;
+            }
+        }
+    }
+
+    .home-page {
+        display: grid;
+    }
+}
