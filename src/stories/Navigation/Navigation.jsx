@@ -1,4 +1,4 @@
-function TopNav() {
+export const Navigation = () => {
     return (
         <nav className="nav-top">
             <ul className="nav-top-list">
@@ -17,6 +17,6 @@ function TopNav() {
             </ul>
         </nav>
     );
-}
+};
 
-export default TopNav;
+Navigation.propTypes = {};

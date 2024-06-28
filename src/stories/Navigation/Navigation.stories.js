@@ -1,6 +1,9 @@
-import { Navigation } from "./Navigation.jsx";
+import { Navigation } from './Navigation';
 
 export default {
-    title: "Example/Navigation",
+    title: 'Example/Navigation',
     component: Navigation,
+    tags: ['autodocs'],
 };
+
+export const Top = {};
