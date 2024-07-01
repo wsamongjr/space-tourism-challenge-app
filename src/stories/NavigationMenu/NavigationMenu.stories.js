@@ -1,12 +1,11 @@
 import { backgrounds, layout, viewport } from "stories/parameters";
-import { Navigation } from "./Navigation";
+import { NavigationMenu } from "./NavigationMenu";
 
 export default {
-    title: "Example/Navigation",
-    component: Navigation,
+    title: "Example/NavigationMenu",
+    component: NavigationMenu,
     tags: ["autodocs"],
     parameters: {
-        layout,
         backgrounds,
         viewport,
     },

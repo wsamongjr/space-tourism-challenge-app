@@ -1,0 +1,15 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.background {
+    display: block;
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 100%;
+}

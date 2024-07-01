@@ -1,0 +1,30 @@
+@import "../../variables.scss";
+
+html,
+body {
+    font-size: $desktop-body;
+    @media only screen and (max-width: $tablet-screen-max-width) {
+        font-size: $tablet-body;
+    }
+}
+
+.nav-main {
+    display: flex;
+    width: 100%;
+    padding-top: $spacing-2xl;
+    align-items: center;
+
+    .nav-logo {
+        margin-right: -$spacing-xl;
+        height: auto;
+    }
+
+    @media only screen and (max-width: $tablet-screen-max-width) {
+        padding-top: 0;
+    }
+
+    @media only screen and (max-width: $tablet-screen-max-width) {
+        padding-top: $spacing-large;
+        padding-bottom: $spacing-large;
+    }
+}

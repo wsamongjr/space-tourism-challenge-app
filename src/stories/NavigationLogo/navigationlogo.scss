@@ -1,0 +1,29 @@
+@import "../../variables.scss";
+
+.nav-logo {
+    align-items: center;
+    display: flex;
+    column-gap: $spacing-4xl;
+    width: 100%;
+    padding-left: $spacing-4xl;
+
+    .logo {
+        display: flex;
+    }
+
+    span {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border: 1px solid hsla(0, 0%, 100%, 0.5);
+    }
+
+    @media only screen and (max-width: $tablet-screen-max-width) {
+        width: 160px;
+        padding-left: $spacing-2xl;
+
+        span {
+            display: none;
+        }
+    }
+}
