@@ -1,8 +1,8 @@
-import { backgrounds, layout, viewport } from "stories/parameters";
+import { backgrounds, viewport } from "stories/parameters";
 import { NavigationMenu } from "./NavigationMenu";
 
 export default {
-    title: "Example/NavigationMenu",
+    title: "Space Tourism/NavigationMenu",
     component: NavigationMenu,
     tags: ["autodocs"],
     parameters: {

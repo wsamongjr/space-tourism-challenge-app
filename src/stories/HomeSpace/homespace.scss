@@ -1,0 +1,39 @@
+@import "../../variables.scss";
+
+.space-content {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    width: 1110px;
+    margin-bottom: 0;
+
+    .round-button {
+        margin-right: 0;
+    }
+
+    @media only screen and (max-width: $tablet-screen-max-width) {
+        width: auto;
+        height: 672px;
+        padding-left: $spacing-xs;
+        padding-left: $spacing-xs;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: none;
+        gap: $spacing-3xl;
+
+        .text-section {
+            text-align: center;
+            width: 512px;
+        }
+
+        .round-button {
+            margin-right: auto;
+        }
+    }
+
+    @media only screen and (max-width: $mobile-screen-max-width) {
+        .text-section {
+            width: auto;
+        }
+    }
+}

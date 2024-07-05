@@ -4,10 +4,10 @@ import "./navigation.scss";
 
 export const Navigation = () => {
     return (
-        <div className="nav-main">
+        <header className="nav-main">
             <NavigationLogo />
             <NavigationMenu />
-        </div>
+        </header>
     );
 };
 

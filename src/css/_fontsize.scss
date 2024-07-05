@@ -1,0 +1,118 @@
+@import "../variables.scss";
+
+// Desktop
+.heading-xl {
+    font-size: $desktop-heading-xl;
+    font-family: "Bellefair";
+}
+
+.heading-large {
+    font-size: $desktop-heading-large;
+    font-family: "Bellefair";
+}
+
+.heading-medium {
+    font-size: $desktop-heading-medium;
+    font-family: "Bellefair";
+}
+
+.heading-small {
+    font-size: $desktop-heading-small;
+    font-family: "Bellefair";
+}
+
+.heading-xs {
+    font-size: $desktop-heading-xs;
+    font-family: "Barlow Condensed";
+    letter-spacing: 4px;
+}
+
+.sub-heading-small {
+    font-size: $desktop-sub-heading-small;
+    font-family: "Barlow Condensed";
+    letter-spacing: 2px;
+}
+
+.sub-heading-large {
+    font-size: $desktop-sub-heading-large;
+    font-family: "Bellefair";
+}
+
+.heading-navigation {
+    font-size: $desktop-navigation;
+    letter-spacing: 2px;
+    font-family: "Barlow Condensed";
+
+    .bold {
+        letter-spacing: 2.7px;
+        font-weight: bold;
+    }
+}
+
+.heading-body {
+    font-size: $desktop-body;
+}
+
+body,
+html {
+    font-size: $desktop-body;
+    font-family: "Barlow";
+
+    // Tablet
+    @media only screen and (max-width: $tablet-screen-max-width) {
+        font-size: $tablet-body;
+
+        .heading-large {
+            font-size: $tablet-heading-large;
+            font-family: "Bellefair";
+        }
+
+        .heading-medium {
+            font-size: $tablet-heading-medium;
+            font-family: "Bellefair";
+        }
+
+        .heading-xs {
+            font-size: $tablet-heading-xs;
+            font-family: "Barlow Condensed";
+            letter-spacing: 0.15em;
+        }
+    }
+
+    // Mobile
+    @media only screen and (max-width: $mobile-screen-max-width) {
+        font-size: $mobile-body;
+
+        .heading-xl {
+            font-size: $mobile-heading-xl;
+            font-family: "Bellefair";
+        }
+
+        .heading-large {
+            font-size: $mobile-heading-large;
+            font-family: "Bellefair";
+        }
+
+        .heading-medium {
+            font-size: $mobile-heading-medium;
+            font-family: "Bellefair";
+        }
+
+        .heading-small {
+            font-size: $mobile-heading-small;
+            font-family: "Bellefair";
+        }
+
+        .heading-xs {
+            font-size: $mobile-heading-xs;
+            font-family: "Barlow Condensed";
+            letter-spacing: 0.15em;
+        }
+
+        .heading-navigation {
+            font-size: $mobile-navigation;
+            font-family: "Barlow Condensed";
+            letter-spacing: 0.15em;
+        }
+    }
+}

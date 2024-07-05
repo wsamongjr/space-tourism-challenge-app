@@ -50,13 +50,14 @@ nav {
     }
 
     @media only screen and (max-width: $tablet-screen-max-width) {
-        padding-left: 0;
+        width: 640px;
+        padding-left: $spacing-2xl;
         padding-right: $spacing-2xl;
     }
 
     @media only screen and (max-width: $mobile-screen-max-width) {
         display: none;
-        &.flyout {
+        &.show-flyout {
             display: flex;
             flex-direction: column;
             background-color: rgba(11, 13, 23, 0.15);
@@ -65,7 +66,7 @@ nav {
             position: fixed;
             right: 0;
             align-items: normal;
-            width: 65%;
+            width: 67%;
             padding: 0;
             row-gap: $spacing-xl;
             padding-left: $spacing-xl;
@@ -98,7 +99,7 @@ nav {
                 height: 24px;
                 padding-top: $spacing-xl;
                 padding-bottom: $spacing-xl;
-                svg {
+                button {
                     position: absolute;
                     right: $spacing-large;
                 }
@@ -110,10 +111,9 @@ nav {
 .nav-mobile-hamburger {
     display: none;
     align-items: center;
-    cursor: pointer;
     padding-top: $spacing-large;
     padding-bottom: $spacing-large;
-    svg {
+    button {
         position: absolute;
         right: $spacing-large;
     }
@@ -121,4 +121,8 @@ nav {
     @media only screen and (max-width: $mobile-screen-max-width) {
         display: flex;
     }
+}
+
+button.btn-svg {
+    position: absolute;
 }

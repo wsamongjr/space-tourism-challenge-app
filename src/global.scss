@@ -1,0 +1,23 @@
+@import "./variables.scss";
+@import "./css/_layout.scss";
+@import "./css/_colors.scss";
+@import "./css/_spacing.scss";
+@import "./css/_fontsize.scss";
+
+html,
+body {
+    .bg-space {
+        background-image: url("./assets/home/background-home-desktop.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media only screen and (max-width: $tablet-screen-max-width) {
+            background-image: url("./assets/home/background-home-tablet.jpg");
+        }
+
+        @media only screen and (max-width: $mobile-screen-max-width) {
+            background-image: url("./assets/home/background-home-mobile.jpg");
+        }
+    }
+}

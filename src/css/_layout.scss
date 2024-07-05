@@ -1,0 +1,18 @@
+.main-content {
+    display: flex;
+    height: 100%;
+
+    &.home-page {
+        padding-top: $spacing-7xl;
+        padding-bottom: $spacing-7xl;
+
+        @media only screen and (max-width: $tablet-screen-max-width) {
+            padding-left: $spacing-2xl;
+            padding-right: $spacing-2xl;
+        }
+
+        @media only screen and (max-width: $mobile-screen-max-width) {
+            padding: $spacing-large;
+        }
+    }
+}

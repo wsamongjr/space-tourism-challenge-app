@@ -2,7 +2,7 @@ import { backgrounds, viewport } from "stories/parameters";
 import { NavigationLogo } from "./NavigationLogo";
 
 export default {
-    title: "Example/NavigationLogo",
+    title: "Space Tourism/NavigationLogo",
     component: NavigationLogo,
     tags: ["autodocs"],
     parameters: {

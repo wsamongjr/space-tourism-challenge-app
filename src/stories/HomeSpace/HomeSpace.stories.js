@@ -1,9 +1,9 @@
 import { backgrounds, layout, viewport } from "stories/parameters";
-import { Navigation } from "./Navigation";
+import { HomeSpace } from "./HomeSpace";
 
 export default {
-    title: "Space Tourism/Navigation",
-    component: Navigation,
+    title: "Space Tourism/HomeSpace",
+    component: HomeSpace,
     tags: ["autodocs"],
     parameters: {
         layout,
@@ -12,4 +12,4 @@ export default {
     },
 };
 
-export const Desktop = {};
+export const Home = {};
