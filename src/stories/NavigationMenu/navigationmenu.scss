@@ -7,7 +7,9 @@ nav {
     display: flex;
     align-items: center;
     width: 100%;
+    padding-left: $spacing-4xl;
     padding-right: $spacing-4xl;
+    justify-content: flex-end;
 
     .btn-close {
         display: none;
@@ -18,7 +20,6 @@ nav {
         display: flex;
         column-gap: $spacing-3xl;
         list-style: none;
-        margin-left: auto;
         padding-left: 0;
 
         li {
@@ -47,12 +48,21 @@ nav {
                 border-color: hsla(0, 0%, 100%, 0.5);
             }
         }
+
+        @media only screen and (max-width: $mobile-screen-max-width-medium) {
+            column-gap: $spacing-medium;
+        }
     }
 
     @media only screen and (max-width: $tablet-screen-max-width) {
-        width: 640px;
+        width: 100%;
         padding-left: $spacing-2xl;
         padding-right: $spacing-2xl;
+    }
+
+    @media only screen and (max-width: $mobile-screen-max-width-medium) {
+        padding-left: $spacing-medium;
+        padding-right: $spacing-medium;
     }
 
     @media only screen and (max-width: $mobile-screen-max-width) {
