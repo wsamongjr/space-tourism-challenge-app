@@ -58,14 +58,6 @@ html {
     font-size: $desktop-body;
     font-family: "Barlow";
 
-    .page-title {
-        .heading-menu-index {
-            backdrop-filter: blur(0.25em);
-            letter-spacing: 0.15em;
-            mix-blend-mode: overlay;
-        }
-    }
-
     // Tablet
     @media only screen and (max-width: $tablet-screen-max-width) {
         font-size: $tablet-body;

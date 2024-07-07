@@ -1,7 +1,7 @@
 import { Button } from "stories/Button/Button";
 import "./homespace.scss";
 
-export const HomeSpace = () => (
+export const HomeSpace = ({ onClick }) => (
     <section className="main-content home-page">
         <div className="space-content">
             <div className="d-flex flex-column gap-large text-section">
@@ -14,7 +14,9 @@ export const HomeSpace = () => (
             </div>
 
             <div className="d-flex flex-column m-auto round-button">
-                <Button kind="ROUND">EXPLORE</Button>
+                <Button variant="ROUND" onClick={() => onClick("01")}>
+                    EXPLORE
+                </Button>
             </div>
         </div>
     </section>

@@ -1,10 +1,11 @@
 import { fn } from "@storybook/test";
 import { backgrounds, viewport } from "stories/parameters";
-import { Button } from "./Button";
+import { Pagination } from "./Pagination";
+import { DotComponent } from "components/Pagination";
 
 export default {
-    title: "Space Tourism/Button",
-    component: Button,
+    title: "Space Tourism/Pagination",
+    component: Pagination,
     tags: ["autodocs"],
     parameters: {
         backgrounds,
@@ -15,22 +16,6 @@ export default {
     args: { onClick: fn() },
 };
 
-export const Default = {
-    args: {
-        children: "EXPLORE",
-    },
-};
-
-export const Wrapper = {
-    args: {
-        children: "EXPLORE",
-        variant: "WRAPPER",
-    },
-};
-
-export const Round = {
-    args: {
-        children: "EXPLORE",
-        variant: "ROUND",
-    },
+export const Dot = {
+    args: { items: [{ id: "Douglas Hurley" }, { id: "Mark Shuttleworth" }, { id: "Victor Glover" }, { id: "Anousheh Ansari" }], itemComponent: DotComponent },
 };

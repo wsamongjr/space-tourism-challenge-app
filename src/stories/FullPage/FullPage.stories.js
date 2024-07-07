@@ -19,3 +19,9 @@ export const Destination = {
         activeHeaderMenu: "01",
     },
 };
+
+export const Crew = {
+    args: {
+        activeHeaderMenu: "02",
+    },
+};
