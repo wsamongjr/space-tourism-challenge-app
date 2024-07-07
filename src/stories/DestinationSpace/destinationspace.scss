@@ -1,0 +1,143 @@
+@import "../../variables.scss";
+
+.destination-page {
+    flex-direction: column;
+    padding-top: $spacing-3xl;
+    padding-bottom: $spacing-3xl;
+    margin: auto;
+
+    .destination-content {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-large;
+        max-width: 1110px;
+        height: inherit;
+
+        .explanation-section {
+            flex: 1;
+            flex-direction: row;
+            align-items: center;
+
+            > div {
+                flex: 1;
+                height: 100%;
+
+                img {
+                    margin: auto;
+                    width: 480px;
+                    height: 480px;
+                }
+            }
+
+            .explanation {
+                flex-direction: column;
+                min-width: 539px;
+
+                .inner-explanation {
+                    max-width: 445px;
+                    margin: auto;
+
+                    .details {
+                        .desc {
+                            width: 445px;
+                            height: 128px;
+                        }
+                    }
+                }
+            }
+
+            .page-title {
+                height: fit-content;
+            }
+
+            .statistics {
+                flex-direction: row;
+                & > div {
+                    flex-grow: 1;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: $tablet-screen-max-width) {
+        padding: $spacing-2xl;
+        margin: 0;
+
+        .destination-content {
+            width: auto;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: none;
+            gap: $spacing-large;
+
+            .explanation-section {
+                flex-direction: column;
+                > div {
+                    img {
+                        margin: 0;
+                        width: 300px !important;
+                        height: 300px !important;
+                    }
+                }
+                .explanation {
+                    min-width: 688px;
+                    .inner-explanation {
+                        max-width: 514px;
+                        gap: $spacing-large;
+
+                        .nav-menu {
+                            gap: $spacing-xl;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+
+                        span {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            .page-title {
+                grid-column: unset;
+            }
+        }
+    }
+
+    @media only screen and (max-width: $mobile-screen-max-width) {
+        padding: $spacing-large;
+
+        .destination-content {
+            .explanation-section {
+                max-width: 327px;
+                > div {
+                    img {
+                        width: 150px !important;
+                        height: 150px !important;
+                    }
+                }
+
+                .explanation {
+                    min-width: unset;
+
+                    .inner-explanation {
+                        max-width: 327px;
+
+                        .details {
+                            .desc {
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+
+                .statistics {
+                    flex-direction: column;
+                }
+            }
+
+            .page-title {
+                grid-column: unset;
+            }
+        }
+    }
+}

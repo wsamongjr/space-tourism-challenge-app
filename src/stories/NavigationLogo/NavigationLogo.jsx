@@ -1,3 +1,4 @@
+import { LineBoundary } from "stories/LineBoundary/LineBoundary";
 import "./navigationlogo.scss";
 
 export const NavigationLogo = () => (
@@ -10,7 +11,7 @@ export const NavigationLogo = () => (
                 </g>
             </svg>
         </div>
-        <span></span>
+        <LineBoundary />
     </div>
 );
 NavigationLogo.propTypes = {};
