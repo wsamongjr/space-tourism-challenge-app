@@ -5,11 +5,11 @@ const BUTTON_CLASES = {
     ROUND: "btn-wrapper btn-round",
 };
 
-export const Button = ({ children, kind, className, ...props }) => {
-    const btnClass = BUTTON_CLASES[kind] || "";
+export const Button = ({ children, variant, className, ...props }) => {
+    const btnClass = BUTTON_CLASES[variant] || "";
     return (
         <button type="button" className={[btnClass, className].join(" ").trim()} {...props}>
-            {kind === "ROUND" ? (
+            {variant === "ROUND" ? (
                 <div className="btn-round-border">
                     <span className="color-very-dark-navy heading-small">{children}</span>
                 </div>

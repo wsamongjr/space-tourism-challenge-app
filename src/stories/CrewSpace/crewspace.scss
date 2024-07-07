@@ -1,0 +1,136 @@
+@import "../../variables.scss";
+
+.crew-page {
+    flex-direction: column;
+    padding-top: $spacing-3xl;
+    padding-bottom: $spacing-3xl;
+    margin: auto;
+
+    .crew-content {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: $spacing-large;
+        max-width: 1110px;
+        margin: auto;
+
+        .bio-section {
+            flex: 1;
+            gap: $spacing-xl;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+
+            .bio {
+                flex: 1;
+                flex-direction: column;
+                align-self: stretch;
+                min-width: 539px;
+
+                .inner-bio {
+                    flex: none;
+                    order: 0;
+                    flex-grow: 1;
+                    max-width: 539px;
+
+                    .role-bio {
+                        justify-content: center;
+                        align-items: flex-start;
+                        padding: 0px;
+                        flex-grow: 1;
+                    }
+                }
+            }
+
+            .page-title {
+                height: fit-content;
+            }
+
+            .pager {
+                padding: 0px 0px 48px;
+                flex: 1;
+                width: 100%;
+            }
+        }
+    }
+
+    span.role {
+        mix-blend-mode: normal;
+        opacity: 0.5;
+    }
+
+    @media only screen and (max-width: $tablet-screen-max-width) {
+        padding: $spacing-2xl;
+        margin: 0;
+
+        .crew-content {
+            margin: 0;
+            max-width: 512px;
+
+            .bio-section {
+                margin: auto;
+                flex-direction: column;
+                text-align: center;
+
+                .bio {
+                    .inner-bio {
+                        gap: $spacing-large;
+                        .role-bio {
+                            max-width: 512px;
+                        }
+
+                        .pager {
+                            justify-content: center;
+                            gap: $spacing-medium;
+                            padding: 0;
+                        }
+                    }
+                }
+
+                img {
+                    width: 446px !important;
+                    height: 560px !important;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: $mobile-screen-max-width) {
+        padding: $spacing-large;
+        .crew-content {
+            text-align: center;
+            align-items: center;
+            max-width: 327px;
+
+            .bio-section {
+                margin: auto;
+                flex-direction: column;
+                text-align: center;
+
+                .bio {
+                    max-width: 327px;
+                    min-width: unset;
+
+                    .inner-bio {
+                        max-width: 327px;
+                        gap: $spacing-large;
+
+                        .role-bio {
+                            align-items: center;
+                        }
+
+                        .pager {
+                            justify-content: center;
+                            gap: $spacing-medium;
+                        }
+                    }
+                }
+
+                img {
+                    width: 271px !important;
+                    height: 340px !important;
+                }
+            }
+        }
+    }
+}

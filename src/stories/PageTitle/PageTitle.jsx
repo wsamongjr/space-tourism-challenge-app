@@ -1,5 +1,3 @@
-// import { Button } from "stories/Button/Button";
-// import MoonSrc from "assets/destination/image-moon.png";
 import "./pagetitle.scss";
 
 import PropTypes from "prop-types";

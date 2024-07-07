@@ -36,7 +36,7 @@ export const DestinationSpace = () => {
 
                     <section className="d-flex explanation-section gap-xl">
                         <div className="d-flex">
-                            <img alt="Moon" src={images.webp} width={480} height={480} />
+                            <img alt={name} src={images.webp} width={480} height={480} />
                         </div>
 
                         <div className="d-flex explanation">

@@ -1,0 +1,33 @@
+@import "../../variables.scss";
+
+.dot-pagination {
+    box-sizing: border-box;
+    .circle {
+        box-sizing: border-box;
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border: 2px solid $color-white;
+        border-radius: 100%;
+        background: $color-white;
+        mix-blend-mode: normal;
+        opacity: 0.17;
+
+        @media only screen and (max-width: $tablet-screen-max-width) {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    &:not(.active) {
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    &.active {
+        .circle {
+            opacity: 1;
+        }
+    }
+}
