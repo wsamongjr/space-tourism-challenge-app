@@ -13,3 +13,9 @@ export default {
 };
 
 export const Home = {};
+
+export const Destination = {
+    args: {
+        activeHeaderMenu: "01",
+    },
+};
