@@ -6,6 +6,10 @@
 
 html,
 body {
+    .d-hide {
+        display: none;
+    }
+
     .bg-space-home {
         background-image: url("./assets/home/background-home-desktop.jpg");
         background-size: cover;
