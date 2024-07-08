@@ -1,0 +1,51 @@
+@import "../../variables.scss";
+
+.btn-pager {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    .circle {
+        width: 80px;
+        height: 80px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        line-height: 2.4;
+
+        &:hover {
+            border: 1px solid $color-white;
+        }
+
+        span {
+            text-align: center;
+            text-transform: uppercase;
+            color: $color-white;
+        }
+
+        &.active {
+            background: $color-white;
+            span {
+                color: #0b0d17;
+            }
+        }
+    }
+
+    @media only screen and (max-width: $tablet-screen-max-width) {
+        .circle {
+            width: 56px;
+            height: 56px;
+            line-height: 1.9;
+        }
+    }
+
+    @media only screen and (max-width: $mobile-screen-max-width) {
+        .circle {
+            width: 40px;
+            height: 40px;
+            line-height: 2.2;
+        }
+    }
+}

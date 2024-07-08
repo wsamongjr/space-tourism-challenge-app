@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./dot.scss";
 import { getKeyDex } from "util/common";
+import "./dot.scss";
+import "./pager.scss";
 
 export const Pagination = ({ items, itemComponent: ItemComponent, activePage, onSelect }) => {
     const [selectPage, setSelectPage] = React.useState(activePage);

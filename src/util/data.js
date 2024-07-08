@@ -23,3 +23,13 @@ export const getCrewByName = async (crewName) => {
     var crew = await fetchCrew();
     return crew.find(({ name }) => name === crewName);
 };
+
+export const fetchTechnology = async () => {
+    var result = await fetch();
+    return result.technology;
+};
+
+export const getTechnologyByName = async (techName) => {
+    var crew = await fetchTechnology();
+    return crew.find(({ name }) => name === techName);
+};

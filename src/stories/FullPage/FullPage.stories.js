@@ -25,3 +25,9 @@ export const Crew = {
         activeHeaderMenu: "02",
     },
 };
+
+export const Technology = {
+    args: {
+        activeHeaderMenu: "03",
+    },
+};
