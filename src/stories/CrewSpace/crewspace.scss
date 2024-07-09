@@ -12,7 +12,6 @@
         flex-direction: column;
         gap: $spacing-large;
         max-width: 1110px;
-        margin: auto;
 
         .bio-section {
             flex: 1;
@@ -64,12 +63,6 @@
         margin: 0;
 
         .crew-content {
-            margin: 0;
-            margin: auto;
-            max-width: 512px;
-            text-align: center;
-            align-items: center;
-
             .bio-section {
                 margin: auto;
                 flex-direction: column;
@@ -80,6 +73,10 @@
                         gap: $spacing-large;
                         .role-bio {
                             max-width: 512px;
+
+                            .role-name {
+                                margin: auto;
+                            }
                         }
 
                         .pager {
