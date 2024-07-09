@@ -9,6 +9,9 @@
 
     .logo {
         display: flex;
+        &:not(.home) {
+            cursor: pointer;
+        }
     }
 
     @media only screen and (max-width: $tablet-screen-max-width) {

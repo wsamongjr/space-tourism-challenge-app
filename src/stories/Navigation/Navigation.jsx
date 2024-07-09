@@ -14,7 +14,7 @@ const menus = [
 export const Navigation = ({ activeMenu, onSelect }) => {
     return (
         <header className="nav-main">
-            <NavigationLogo />
+            <NavigationLogo activeMenu={activeMenu} onClick={() => onSelect("00")} />
             <NavigationMenu variant="header" items={menus} activeMenu={activeMenu} itemComponent={HeaderComponent} onSelect={onSelect} />
         </header>
     );

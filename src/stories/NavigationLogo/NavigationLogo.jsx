@@ -1,9 +1,10 @@
+import PropTypes from "prop-types";
 import { LineBoundary } from "stories/LineBoundary/LineBoundary";
 import "./navigationlogo.scss";
 
-export const NavigationLogo = () => (
+export const NavigationLogo = ({ activeMenu, onClick }) => (
     <div className="nav-logo">
-        <div className="logo">
+        <div className={"logo" + (activeMenu === "00" ? " home" : "")} onClick={onClick}>
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
                 <g fill="none" fill-rule="evenodd">
                     <circle cx="24" cy="24" r="24" fill="#FFF" />
@@ -14,4 +15,7 @@ export const NavigationLogo = () => (
         <LineBoundary />
     </div>
 );
-NavigationLogo.propTypes = {};
+NavigationLogo.propTypes = {
+    activeMenu: PropTypes.string,
+    onClick: PropTypes.func,
+};

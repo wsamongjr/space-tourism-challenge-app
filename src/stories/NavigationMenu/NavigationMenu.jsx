@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import "./navigationmenu.scss";
 import { Button } from "stories/Button/Button";
@@ -11,9 +11,14 @@ const VARIANT = {
 
 export const NavigationMenu = ({ variant, items, itemComponent: ItemComponent, activeMenu, onSelect }) => {
     const [showFlyout, setShowFlyout] = React.useState();
-    const [selectMenu, setSelectMenu] = React.useState(activeMenu);
+    const [selectMenu, setSelectMenu] = React.useState();
     const defaultClass = VARIANT[variant || "header"];
     const navClasses = [defaultClass, showFlyout && variant === "header" ? "show-flyout" : ""].join(" ");
+
+    useEffect(() => {
+        setSelectMenu(activeMenu);
+        setShowFlyout(false);
+    }, [activeMenu]);
     return (
         <>
             <nav className={navClasses}>

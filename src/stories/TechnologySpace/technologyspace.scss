@@ -4,7 +4,10 @@
     flex-direction: column;
     padding-top: $spacing-3xl;
     padding-bottom: $spacing-3xl;
-    margin: auto;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 1;
 
     .technology-content {
         display: flex;
@@ -64,10 +67,9 @@
         margin: 0;
 
         .technology-content {
-            text-align: center;
-            align-items: center;
-
             .description-section {
+                text-align: center;
+                align-items: center;
                 flex-direction: column;
 
                 .inner-description {
@@ -79,16 +81,30 @@
                         justify-content: center;
                         flex-direction: row;
                     }
+
+                    .role-desc {
+                        max-width: 512px;
+                        justify-content: center;
+                        align-items: center;
+                        margin: auto;
+                    }
                 }
 
                 .tech-img {
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding-top: 64px;
+
+                    width: 688px;
+                    height: 420px;
                     .img-portrait {
                         display: none;
                     }
                     .img-landscape {
                         display: block;
                         width: 768px;
-                        height: 357px;
+                        height: 356px;
                     }
                 }
 
@@ -116,8 +132,8 @@
                 .tech-img {
                     .img-portrait {
                         display: block;
-                        width: 373px;
-                        height: 376px;
+                        width: 417px;
+                        height: 318px;
                     }
                     .img-landscape {
                         display: none;
