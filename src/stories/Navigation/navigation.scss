@@ -10,9 +10,10 @@ body {
 
 .nav-main {
     display: flex;
-    width: 100%;
-    padding-top: $spacing-2xl;
+    flex-direction: row;
     align-items: center;
+    padding: 40px 0px 0px;
+    isolation: isolate;
 
     .nav-logo {
         margin-right: -$spacing-xl;

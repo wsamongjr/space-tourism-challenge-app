@@ -4,7 +4,7 @@
     flex-direction: column;
     padding-top: $spacing-3xl;
     padding-bottom: $spacing-3xl;
-    margin: auto;
+    width: 100%;
 
     .crew-content {
         display: flex;
@@ -12,6 +12,7 @@
         flex-direction: column;
         gap: $spacing-large;
         max-width: 1110px;
+        margin: auto;
 
         .bio-section {
             flex: 1;

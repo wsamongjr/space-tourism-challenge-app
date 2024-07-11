@@ -4,6 +4,13 @@
 @import "./css/_spacing.scss";
 @import "./css/_fontsize.scss";
 
+.inside-auto {
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
 html,
 body {
     .d-hide {

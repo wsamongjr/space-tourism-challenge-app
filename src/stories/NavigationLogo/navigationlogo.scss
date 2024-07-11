@@ -1,11 +1,12 @@
 @import "../../variables.scss";
 
 .nav-logo {
-    align-items: center;
     display: flex;
-    column-gap: $spacing-4xl;
     width: 100%;
-    padding-left: $spacing-4xl;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 0px 0px $spacing-4xl;
+    gap: $spacing-4xl;
 
     .logo {
         display: flex;

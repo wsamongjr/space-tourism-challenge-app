@@ -1,7 +1,11 @@
+@import "../../variables.scss";
+
 span.line-boundary {
-    margin: 0;
-    padding: 0;
     width: 100%;
-    border: 1px solid hsla(0, 0%, 100%, 0.5);
+    height: 1px;
+
+    background: $color-white;
+    mix-blend-mode: normal;
+    opacity: 0.25;
     z-index: 9;
 }
