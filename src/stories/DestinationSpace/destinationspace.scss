@@ -1,4 +1,4 @@
-@import "../../variables.scss";
+@import '../../variables.scss';
 
 :root {
     --desktop-explanation-min-width: 539px;
@@ -76,7 +76,6 @@
                 flex-direction: column;
                 > div {
                     img {
-                        margin: 0;
                         width: 300px !important;
                         height: 300px !important;
                     }

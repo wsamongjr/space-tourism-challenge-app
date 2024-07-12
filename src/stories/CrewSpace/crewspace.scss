@@ -1,4 +1,4 @@
-@import "../../variables.scss";
+@import '../../variables.scss';
 
 .crew-page {
     flex-direction: column;
@@ -25,7 +25,7 @@
                 flex: 1;
                 flex-direction: column;
                 align-self: stretch;
-                min-width: 539px;
+                max-width: 539px;
 
                 .inner-bio {
                     flex: none;
@@ -47,6 +47,8 @@
             }
 
             .pager {
+                position: relative;
+                align-items: baseline;
                 padding: 0px 0px 48px;
                 flex: 1;
                 width: 100%;

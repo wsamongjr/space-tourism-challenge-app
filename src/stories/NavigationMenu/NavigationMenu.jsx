@@ -1,30 +1,30 @@
-import React, { useEffect } from "react";
-import PropTypes from "prop-types";
-import "./navigationmenu.scss";
-import { Button } from "stories/Button/Button";
-import { getKeyDex } from "util/common";
-import { Collapse, Fade } from "react-bootstrap";
+import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
+import './navigationmenu.scss';
+import { Button } from 'stories/Button/Button';
+import { getKeyDex } from 'util/common';
+import { Fade } from 'react-bootstrap';
 
 const VARIANT = {
-    header: "header-menu",
-    tab: "tab-menu",
+    header: 'header-menu',
+    tab: 'tab-menu',
 };
 
 export const NavigationMenu = ({ variant, items, itemComponent: ItemComponent, activeMenu, onSelect }) => {
     const [showFlyout, setShowFlyout] = React.useState();
     const [selectMenu, setSelectMenu] = React.useState();
-    const defaultClass = VARIANT[variant || "header"];
-    const navClasses = [defaultClass, variant === "header" ? "mobile-flyout" : ""].join(" ");
+    const defaultClass = VARIANT[variant || 'header'];
+    const navClasses = [defaultClass, variant === 'header' ? 'mobile-flyout' : ''].join(' ');
 
     useEffect(() => {
         setSelectMenu(activeMenu);
-        setShowFlyout(false);
-    }, [activeMenu]);
+        setShowFlyout(variant !== 'header');
+    }, [activeMenu, variant]);
     return (
         <>
             <Fade in={showFlyout} timeout={10000}>
                 <nav className={navClasses}>
-                    {variant === "header" && (
+                    {variant === 'header' && (
                         <div className="btn-close">
                             <Button className="btn-wrapper" aria-expanded={showFlyout} aria-controls="mobile-flyout" onClick={() => setShowFlyout(false)}>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21">
@@ -51,7 +51,7 @@ export const NavigationMenu = ({ variant, items, itemComponent: ItemComponent, a
                     </ul>
                 </nav>
             </Fade>
-            {variant === "header" && (
+            {variant === 'header' && (
                 <div className="nav-mobile-hamburger">
                     <Button className="btn-wrapper" aria-expanded={showFlyout} aria-controls="mobile-flyout" onClick={() => setShowFlyout(true)}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
@@ -67,7 +67,7 @@ export const NavigationMenu = ({ variant, items, itemComponent: ItemComponent, a
 };
 
 NavigationMenu.propTypes = {
-    variant: PropTypes.oneOf(["header", "tab"]),
+    variant: PropTypes.oneOf(['header', 'tab']),
     items: PropTypes.array,
     itemComponent: PropTypes.any,
     activeMenu: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
