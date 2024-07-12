@@ -49,7 +49,7 @@ nav.header-menu {
         }
 
         @media only screen and (max-width: $mobile-screen-max-width-medium) {
-            column-gap: $spacing-medium;
+            column-gap: $spacing-xl;
         }
     }
 
@@ -73,9 +73,16 @@ nav.header-menu {
     }
 
     @media only screen and (max-width: $mobile-screen-max-width) {
-        display: none;
-        &.show-flyout {
-            display: flex;
+        .fade {
+            transition-property: height, visibility;
+            transition-duration: 4s;
+        }
+
+        display: flex;
+        &.mobile-flyout {
+            &:not(.show) {
+                display: none;
+            }
             flex-direction: column;
             background-color: rgba(11, 13, 23, 0.15);
             backdrop-filter: blur(40px);
